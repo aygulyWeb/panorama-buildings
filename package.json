@@ -11,7 +11,7 @@
     "build:watch": "webpack build --watch --config webpack.dev.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tilepova",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.20",
