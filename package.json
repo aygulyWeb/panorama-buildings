@@ -1,11 +1,14 @@
 {
-  "name": "my_webpack",
+  "name": "360-panorama",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve"
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack build --config webpack.prod.js",
+    "build:dev": "webpack build --config webpack.dev.js",
+    "build:prod": "webpack build --config webpack.prod.js",
+    "build:watch": "webpack build --watch --config webpack.dev.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +31,7 @@
     "@photo-sphere-viewer/core": "^5.4.1",
     "autoprefixer": "10.4.5",
     "photo-sphere-viewer": "^4.8.1",
-    "three": "^0.156.1"
+    "three": "^0.156.1",
+    "webpack-merge": "^5.9.0"
   }
 }
